@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadoras</title>
+<link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <h1>Selecione uma calculadora</h1>
+    <form>
+        <input type="radio" id="normal-calculadora" name="calculadora" value="normal-calculadora">
+        <label for="normal-calculadora">Calculadora Normal</label><br>
+        <input type="radio" id="Moedas-Conversor" name="calculadora" value="Moedas-Conversor">
+        <label for="Moedas-Conversor">Conversor de Moeda</label><br>
+        <input type="radio" id="juros-compostos" name="calculadora" value="juros-compostos">
+        <label for="juros-compostos">Calculadora de Juros Compostos</label><br>
+        <input type="radio" id="imc" name="calculadora" value="imc">
+        <label for="imc">Calculadora de Imc</label><br>
+        <input type="radio" id="bases" name="calculadora" value="bases">
+        <label for="bases">Calculadora de Bases Numéricas</label><br>
+        <button id="select-calculadora">Selecionar</button>
+    </form>
+
+    <script>
+        const selectCalculadoraButton = document.getElementById("select-calculadora");
+        selectCalculadoraButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            const selectedCalculadora = document.querySelector('input[name="calculadora"]:checked').value;
+            window.location.href = `${selectedCalculadora}.html`;
+        });
+    </script>
+</body>
+</html>
