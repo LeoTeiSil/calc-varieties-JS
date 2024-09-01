@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000; 
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%; 
+    margin: 40px auto;
+  }
+  
+  input[type="radio"] {
+    margin: 10px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
+  button#select-calculadora {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button#select-calculadora:hover {
+    background-color: #3e8e41;
+  }
